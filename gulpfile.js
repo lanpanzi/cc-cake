@@ -44,18 +44,15 @@ gulp.task("js", function() {
 });
 gulp.task("static", function(){
 	gulp.src("src/static/**/*")
-		.pipe(gulp.dest("dist/static"))
-		.pipe(connect.reload());
+		.pipe(gulp.dest("dist/static"));
 }); 
 gulp.task("libs", function(){
 	gulp.src("src/libs/**/*")
-		.pipe(gulp.dest("dist/libs"))
-		.pipe(connect.reload());
+		.pipe(gulp.dest("dist/libs"));
 }); 
 gulp.task("api", function(){
 	gulp.src("src/api/**/*")
-		.pipe(gulp.dest("dist/api"))
-		.pipe(connect.reload());
+		.pipe(gulp.dest("dist/api"));
 }); 
 gulp.task("connect", function(){
 	connect.server({
@@ -68,9 +65,6 @@ gulp.task("watch", function(){
 	gulp.watch("src/scss/**/*.scss", ['css']);
 	gulp.watch("src/**/*.html", ['html']);
 	gulp.watch("src/js/**/*.js", ['js']);
-	gulp.watch("src/static/**/*", ['static']);
-	gulp.watch("src/libs/**/*", ['libs']);
-	gulp.watch("src/api/**/*", ['api']);
 });
 
 gulp.task("default", ["css", "html", "js", "static", "libs", "api", "connect", "watch"]);
