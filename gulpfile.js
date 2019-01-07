@@ -59,7 +59,7 @@ gulp.task("connect", function(){
 		port: 8080,
 		livereload: true,
 		root: "dist"
-	})
+	});
 });
 gulp.task("watch", function(){
 	gulp.watch("src/scss/**/*.scss", ['css']);

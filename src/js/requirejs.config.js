@@ -8,6 +8,7 @@ require.config({
 		"header":      "js/component/header",
 		"carousel":    "js/component/carousel",
 		"reg":		   "js/component/reg",
+		"captcha":     "js/component/captcha",
 		"footer":      "js/component/footer"
 	},
 	

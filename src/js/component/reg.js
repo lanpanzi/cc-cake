@@ -5,7 +5,7 @@ define(["jquery"], () => {
 			// 定义正则
 			this.phone = /^1[34578]\d{9}$/;
 			this.pwd = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/;
-			this.captcha = /^u847$/i; 
+			this.captcha = /^[a-z0-9]{4}$/i;
 			// 定义标识符
 			this.flag = false;
 			
@@ -52,7 +52,7 @@ define(["jquery"], () => {
 					this.span.html("<i></i>两次密码输入不一致");
 				}
 			} else if (this.target.id === "inputCaptcha") {
-				if (this.captcha.test($(this.target).val())) {
+				if (this.captcha.test($(this.target).val()) && ($(this.target).val() === $(".captcha-pic").text().toLowerCase() || $(this.target).val() === $(".captcha-pic").text().toUpperCase() || $(this.target).val() === $(".captcha-pic").text())) {
 					this.span.html("");
 				} else{
 					this.span.html("<i></i>图形验证码错误");
