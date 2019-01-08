@@ -1,0 +1,24 @@
+<div class="list">
+    <script type="text/html" id="list-template">
+        {{each list item i}}
+        <div class="list-item">
+            <div class="info">
+                    <a href="/html/detail.html?id={{ item.id }}">
+                        <img src="{{ item.img }}" alt="" />
+                    </a>
+                    <a href="/html/detail.html?id={{ item.id }}">{{ item.title }}</a>
+                    <a href="/html/detail.html?id={{ item.id }}">{{ item.description }}</a>
+                </div>
+                <div class="tag-list">
+                    <a href="javascript:;">情侣 &gt;</a>
+                    <a href="javascript:;">人气 &gt;</a>
+                </div>
+                <div class="cart-info">
+                    <p>￥<span>{{ item.price }}</span></p>
+                    <a href="javascript:;">加入购物车</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</div>
