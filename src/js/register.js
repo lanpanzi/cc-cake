@@ -17,8 +17,10 @@ require(["requirejs.config"], () => {
 					// 阻止默认行为
 					e.preventDefault();
 					if (this.test()) {
+						console.log(111);
 						this.req();
 					} else {
+						console.log(222);
 						this.test();
 					}
 				})
@@ -31,7 +33,7 @@ require(["requirejs.config"], () => {
 						if ($("#inputPassword2").val() === $("#inputPassword1").val()) {
 							if (this.captcha.test($("#inputCaptcha").val()) && ($("#inputCaptcha").val() === $(".captcha-pic").text().toLowerCase() || $("#inputCaptcha").val() === $(".captcha-pic").text().toUpperCase() || $("#inputCaptcha").val() === $(".captcha-pic").text())) {
 								if ($("#inputMessage").val() === "1234") {
-									this.flag = true;
+									flag = true;
 								}
 							}
 						} else if($("#inputPassword2").val() !== "") {
