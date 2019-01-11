@@ -6,7 +6,7 @@
                     <a href="/html/detail.html?id={{ item.id }}">
                         <img src="{{ item.img }}" alt="" />
                     </a>
-                    <a href="/html/detail.html?id={{ item.id }}">{{ item.title }}</a>
+                    <a href="/html/detail.html?id={{ item.id }}">{{ item.title }}&nbsp;&nbsp;</a>
                     <a href="/html/detail.html?id={{ item.id }}">{{ item.description }}</a>
                 </div>
                 <div class="tag-list">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="cart-info">
                     <p>￥<span>{{ item.price }}</span></p>
-                    <a href="javascript:;">加入购物车</a>
+                    <a href="javascript:;" class="addCart">加入购物车</a>
                 </div>
             </div>
         </div>

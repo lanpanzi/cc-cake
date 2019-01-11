@@ -39,9 +39,10 @@
 				</ul>
 				<form class="navbar-form navbar-left">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="请输入关键字">
-					</div>
-					<button type="submit" class="btn btn-default">搜索</button>
+						<input type="text" name="wd"  id="info" class="form-control" placeholder="请输入关键字">
+					</div> 
+					<button type="submit" id="search" class="btn btn-default">搜索</button>
+					<ul id="hint"></ul>
 				</form>
 				<ul class="nav navbar-nav navbar-left">
 					<li>
@@ -51,17 +52,15 @@
 						</p>
 					</li>
 					<li>
-						<p class="navbar-text navbar-left">
-							<a href="/html/login.html" class="navbar-link">登录</a>
-							<i id="or">/</i>
-							<a href="/html/register.html" class="navbar-link">注册</a>
+						<p class="navbar-text navbar-left" id="condition">
+							
 						</p>
 					</li>
 					<li>
 						<p class="navbar-text navbar-right">
-							<a href="javascript:;" class="navbar-link" id="cart">
+							<a href="/html/cart.html" class="navbar-link" id="cart">
 								<i></i>
-								<span id="num">0</span>
+								<span id="num"></span>
 							</a>
 						</p>
 					</li>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>操作_CC CAKE 西西甜品定制</title>
+    <link rel="stylesheet" href="/css/balance.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header></header>
+
+    <!-- balance -->
+    <div class="balance">
+        <div class="balance-wrap">
+            <form>
+                <div class="balance-wrap_title">收货人信息</div>
+                <div class="balance-wrap_content">
+                    <table align="center" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+                        <tbody>
+                            <tr>
+                                <td>配送区域</td>
+                                <td>
+                                    <select name="country" id="selCountries_0">
+                                        <option value="0">请选择国家</option>
+                                        <option value="1" selected="">中国</option>
+                                    </select>
+                                    <select name="province" id="selProvinces_0">
+                                        <option value="0">请选择省</option>
+                                        <option value="2">北京</option>
+                                        <option value="3">天津</option>
+                                        <option value="4">河北省</option>
+                                        <option value="5">山西省</option>
+                                        <option value="6">内蒙古自治区</option>
+                                        <option value="7">辽宁省</option>
+                                        <option value="8">吉林省</option>
+                                        <option value="9">黑龙江省</option>
+                                        <option value="10">上海</option>
+                                        <option value="11">江苏省</option>
+                                        <option value="12">浙江省</option>
+                                        <option value="13">安徽省</option>
+                                        <option value="14">福建省</option>
+                                        <option value="15">江西省</option>
+                                        <option value="16">山东省</option>
+                                        <option value="17">河南省</option>
+                                        <option value="18">湖北省</option>
+                                        <option value="19">湖南省</option>
+                                        <option value="20">广东省</option>
+                                        <option value="21">广西壮族自治区</option>
+                                        <option value="22">海南省</option>
+                                        <option value="23">重庆</option>
+                                        <option value="24">四川省</option>
+                                        <option value="25">贵州省</option>
+                                        <option value="26">云南省</option>
+                                        <option value="27">西藏自治区</option>
+                                        <option value="28">陕西省</option>
+                                        <option value="29">甘肃省</option>
+                                        <option value="30">青海省</option>
+                                        <option value="31">宁夏回族自治区</option>
+                                        <option value="32">新疆维吾尔自治区</option>
+                                        <option value="33">台湾</option>
+                                        <option value="34">香港特别行政区</option>
+                                        <option value="35">澳门特别行政区</option>
+                                        <option value="36">海外</option>
+                                    </select>
+                                    <select name="city" id="selCities_0">
+                                        <option value="0">请选择市</option>
+                                    </select>
+                                    <select name="district" id="selDistricts_0" style="display:none">
+                                        <option value="0">请选择区</option>
+                                    </select>
+                                    (必填) 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>收货人姓名：</td>
+                                <td>
+                                    <input name="consignee" type="text" class="inputBg" id="consignee_0" value="">
+                                    (必填) 
+                                </td>
+                                <td>电子邮件地址：</td>
+                                <td>
+                                    <input name="email" type="text" class="inputBg" id="email_0" value="0">
+                                    (必填) 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>详细地址：</td>
+                                <td>
+                                    <input name="address" type="text" class="inputBg" id="address_0" value="">
+                                    (必填) 
+                                </td>
+                                <td>邮政编码：</td>
+                                <td>
+                                    <input name="zipcode" type="text" class="inputBg" id="zipcode_0" value="">
+                                    (必填) 
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>电话：</td>
+                                    <td>
+                                        <input name="tel" type="text" class="inputBg" id="tel_0" value="">
+                                        (必填) 
+                                    </td>
+                                    <td>手机：</td>
+                                    <td>
+                                        <input name="mobile" type="text" class="inputBg" id="mobile_0" value="">
+                                        (必填) 
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" align="center">
+                                    <input type="submit" name="Submit" class="bnt_blue_2" value="配送至这个地址">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <script src="/libs/require/require.js" data-main="/js/balance.js"></script>
+</body>
+
+</html>

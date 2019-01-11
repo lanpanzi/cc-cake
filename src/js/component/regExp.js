@@ -1,13 +1,11 @@
 // 提交后台
 define(["jquery"], () => {
-	class Reg {
+	class RegExp {
 		constructor() {
 			// 定义正则
 			this.phone = /^1[34578]\d{9}$/;
 			this.pwd = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/;
 			this.captcha = /^[a-z0-9]{4}$/i;
-			// 定义标识符
-			this.flag = false;
 			
 			this.init();
 		}
@@ -20,16 +18,6 @@ define(["jquery"], () => {
 				this.target = e.currentTarget;
 				this.test();
 			});
-			
-			this.form.on("submit", (e) => {
-				// 阻止默认行为
-				e.preventDefault();
-				if (this.test()) {
-					this.req();
-				} else{
-					this.test();
-				}
-			})
 		}
 		// 正则验证
 		test() {
@@ -63,29 +51,8 @@ define(["jquery"], () => {
 				} else{
 					this.span.html("<i></i>手机验证码错误");
 				}
-				this.flag = true;
 			}
-			return this.flag;
-		}
- 		// 向后台发起请求
-		req(event) {
-		  	// ajax发送请求
-			$.ajax({
-				url: "http://localhost/api/v1/register.php",
-				type: "POST",
-				data: {
-					phoneNum: $("#inputPhone").val(),
-					password: $("#inputPassword2").val()
-				},
-				success: function(res) {
-					console.log(res);
-					if (res.res_code === 1) {
-						location.href = "/html/login.html";
-					}
-				},
-				dataType: "json"
-			});
 		}
 	}
-	return new Reg();
+	return new RegExp();
 });

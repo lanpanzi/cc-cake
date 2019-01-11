@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>操作_CC CAKE 西西甜品定制</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header></header>
+
+    <!-- cart -->
+    <div class="cart1" style="display: none;">
+        <div class="cart-not-pro">
+            <img src="/static/img/cartempty.png">
+            <span>您的购物车里还没有商品</span>
+            <a href="/index.html">去购物 &gt;&gt;</a>
+        </div>
+    </div>
+    <div class="cart2" style="display: block;">
+        <div class="cart-title">
+            <ul>
+                <li>商品</li>
+                <li></li>
+                <li>单价</li>
+                <li>数量</li>
+                <li>小计</li>
+                <li>操作</li>
+            </ul>
+        </div>
+
+        <div class="cart-content">
+            <table>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-submit cart-area">
+            <a href="javascript:;" class="cart-submit-empty"><i></i>全部清空</a>
+            <ul class="cart-total-detail">
+                <li>商品金额：<span class="goods_subtotal"></span></li>
+                <li></li>
+            </ul>
+            <div class="cart-total">
+                <span>合计：
+                    <span class="totalSkuPrice"></span>
+                </span>
+            </div>
+            <div>
+                <span class="cart-balance" id="cost-freight-tip">配送说明：生日蛋糕四环以及亦庄周边免运费，四环到五环之间运费30，五环到六环之间运费40。配送当天无修改地址。</span>
+            </div>
+
+            <div class="cart-submit-button">
+                <a href="javascript:;" name="action-submit-btn" id="action-submit-btn" style="color:#ffffff">去结算</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <script src="/libs/require/require.js" data-main="/js/cart.js"></script>
+</body>
+
+</html>

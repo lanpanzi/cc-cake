@@ -66,14 +66,15 @@
 	background: orange;
 }
 .main .inner .new-banner {
-	background: url(../static/img/new-banner.jpg) no-repeat;
+	background: url(/static/img/new-banner.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .main .inner .promotion-banner {
-	background: url(../static/img/promotion-banner.jpg) no-repeat;
+	background: url(/static/img/promotion-banner.jpg) no-repeat;
 	background-size: 100% 100%;
 }
-.main .inner .list {
+.main .inner .new-list,
+.main .inner .promotion-list {
 	height: auto;
 	display: flex;
 	justify-content: space-between;

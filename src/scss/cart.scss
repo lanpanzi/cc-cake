@@ -1,0 +1,258 @@
+@import "../libs/bootstrap/css/bootstrap.min.css";
+@import "./component/reset.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+// cart
+.cart1 {
+    padding: 30px 0;
+    width: 1200px/1366px*100%;
+    height: 477px;
+    @include center-block;
+    margin-top: 80px;
+
+    .cart-not-pro {
+        height: 184px;
+        width: 1198px;
+        padding: 83px 0 115px;
+        margin-top: 24px;
+
+        img {
+            display: block;
+            height: 116px;
+            width: 204px;
+            margin: 0 auto;
+        }
+
+        span {
+            text-align: center;
+            font-size: 14px;
+            color: #D5BFA7;
+            display: block;
+            margin-top: 8px;
+        }
+
+        a {
+            color: #684029;
+            display: block;
+            width: 80px;
+            margin: 0 auto;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.cart2 {
+    padding: 30px 0;
+    width: 1200px/1366px*100%;
+    height: auto;
+    @include center-block;
+    margin-top: 80px;
+
+    .cart-title {
+        height: 44px;
+        box-sizing: border-box;
+        border: 1px solid #E1E1E1;
+        background-color: #FAFAFA;
+        font-size: 13px;
+
+        ul {
+            li {
+                float: left;
+                line-height: 44px;
+                width: 115px;
+                color: rgb(104, 64, 41);
+            }
+
+            li:first-child {
+                width: 285px;
+                margin-left: 166px;
+            }
+
+            li:nth-child(2) {
+                width: 272px;
+                height: 44px;
+            }
+        }
+    }
+
+    .cart-content {
+        display: block;
+        border: 1px solid #E1E1E1;
+        margin: 20px 0;
+        height: auto;
+        padding-left: 60px;
+        padding-right: 50px;
+
+        table {
+            tbody {
+                tr {
+                    border-bottom: 1px dashed #F1F1F1;
+
+                    td {
+                        width: 105px;
+                        padding: 12px 0;
+                        color: #684029;
+                        font-size: 13px;
+
+                        .left {
+                            float: left;
+                            width: 82px;
+                            height: 82px;
+                            border: 1px solid #EFEFEF;
+                            margin-right: 10px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .right {
+                            float: left;
+                            line-height: 82px;
+                            color: #684029;
+                            font-size: 16px;
+                        }
+
+                        .number {
+                            height: 22px;
+                            width: 94px;
+                            border: 1px solid #E7E7E7;
+
+                            input {
+                                outline: none;
+                            }
+
+                            input[type="button"] {
+                                float: left;
+                                width: 22px;
+                                border: none;
+                                font-size: 18px;
+                                line-height: 16px;
+                                cursor: pointer;
+                                background-color: #ffffff;
+                            }
+
+                            input[type="text"] {
+                                float: left;
+                                width: 48px;
+                                border: solid #E7E7E7;
+                                border-width: 0 1px;
+                                text-align: center;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    td:first-child {
+                        width: 285px+106px;
+                    }
+
+                    td:nth-child(2) {
+                        width: 300px;
+                        height: 82px;
+                    }
+
+                    td:nth-last-child(2) {
+                        color: #FF714D;
+                        padding-left: 25px;
+                    }
+
+                    td:nth-last-child(3) {
+                        padding-left: 15px;
+                    }
+
+                    td:last-child {
+                        padding-left: 38px;
+
+                        a {
+                            color: #684029;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .cart-submit {
+        position: relative;
+        background: #FBFBFB;
+        border: 1px solid #E1E1E1;
+        padding: 26px 60px 32px 60px;
+        margin: 20px 0;
+
+
+        .cart-submit-empty {
+            position: absolute;
+            top: 25px;
+            left: 60px;
+            display: block;
+            font-size: 13px;
+            color: #684029;
+
+            i {
+                display: inline-block;
+                width: 18px;
+                height: 21px;
+                background: url(/static/img/icon.png) no-repeat;
+                background-position: -148px -71px;
+                background-size: 310px 120px;
+                vertical-align: middle;
+                margin-right: 18px;
+                margin-bottom: 4px;
+            }
+        }
+
+        li {
+            font-size: 13px;
+            text-align: right;
+            line-height: 18px;
+            margin-bottom: 10px;
+            color: #684029;
+        }
+
+        .cart-total {
+            text-align: right;
+
+            >span {
+                display: inline-block;
+                width: 232px;
+                border-top: 2px solid #E2E2E2;
+                line-height: 42px;
+                font-size: 13px;
+                color: #684029;
+
+                .totalSkuPrice {
+                    color: #FF714D;
+                }
+            }
+        }
+
+        .cart-balance {
+            font-size: 13px;
+            color: #D5BFA7;
+            line-height: 18px;
+            text-align: right;
+            display: block;
+        }
+
+        .cart-submit-button {
+            text-align: right;
+
+            a {
+                background: #684029;
+                width: 232px;
+                height: 40px;
+                display: inline-block;
+                color: #fff;
+                line-height: 40px;
+                text-align: center;
+                font-size: 14px;
+                margin-top: 14px;
+            }
+        }
+    }
+}

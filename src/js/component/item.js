@@ -1,4 +1,4 @@
-define(['jquery', 'template'], ($, template) => {
+define(['jquery', 'template', 'addCart'], ($, template, addCart) => {
     class Item{
         constructor() {
 
@@ -18,6 +18,11 @@ define(['jquery', 'template'], ($, template) => {
                             var list = res.res_body.data;
                             var html = template("list-template", {list: list});
                             $(".list").html(html);
+                            $(".addCart").each((index, addBtn) => {
+                                $(addBtn).on("click", function(){
+                                   addCart.init(list[index]);
+                               });
+                            });
                         }
                     }
                 });

@@ -8,10 +8,11 @@ require.config({
 		"template":    "libs/template/template-web",
 		"header":      "js/component/header",
 		"carousel":    "js/component/carousel",
-		"reg":		   "js/component/reg",
+		"regExp":		   "js/component/regExp",
 		"captcha":     "js/component/captcha",
 		"url":		   "js/component/url",
 		"item":        "js/component/item",
+		"addCart":     "js/component/addCart",
 		"footer":      "js/component/footer"
 	},
 	
